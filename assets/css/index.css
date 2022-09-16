@@ -1,0 +1,110 @@
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   
+  }
+  .wrapper{
+    margin-top: 100px;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .header{
+    position: relative;
+  }
+  .dot {
+    margin: 20px;
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  } 
+
+.dot:hover h1{
+    color: white; 
+}
+.dotclass{
+    width: 100%;
+}
+.hvr-radial-in {
+    display: inline-block;
+    font-size: small;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background: #22a2f8;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: #22a2f8;
+  }
+  .hvr-radial-in:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 100%;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-radial-in:hover, .hvr-radial-in:focus, .hvr-radial-in:active {
+    color: white;
+  }
+  .hvr-radial-in:hover:before, .hvr-radial-in:focus:before, .hvr-radial-in:active:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  #play {
+    position: relative;
+    
+  }
+
+  #play:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0 0 0 / 56%);
+    z-index: 1;
+  }
+  .dotclass {
+    z-index: 2;
+    position: relative;
+  }
+
+  .calchover {
+    mix-blend-mode: hue;
+  }
